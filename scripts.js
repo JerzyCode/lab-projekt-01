@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let sidebar = undefined
     let sidebarVisible = false
 
-    fetch('/sidebar/sidebar.html')
+    fetch('/lab-projekt-01/sidebar/sidebar.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('sidebar').innerHTML = data;
