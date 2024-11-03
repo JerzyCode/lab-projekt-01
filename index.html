@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me!</title>
+    <link rel="stylesheet" href="sidebar/sidebar.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+
+</head>
+<body>
+<div class="container">
+    <aside id="sidebar"></aside>
+    <main>
+        <section class="flex-centered personal-info">
+            <div class="introduction">
+                <h3>Cześć!</h3>
+                <p>Mam na imię Jerzy i oferuję korepetycje z matematyki. Ukończyłem matematykę na AGH oraz aktualnie
+                    jestem studentem 2 stopnia na wydziale Informatyki. Chętnie pomogę przy odrabianiu prac domowych
+                    oraz w przygotowaniach do matury. Nie czekaj! Umów się już teraz!</p>
+            </div>
+        </section>
+        <section class="flex-centered photo">
+            <img src="assets/zdjecie_ja.jpg" alt="me">
+        </section>
+    </main>
+
+    <button id="contact-btn">
+        Wyślij wiadomość!
+    </button>
+
+    <div class="popup-visible" style="display: none;">
+        <div class="popup-content">
+            <div class="row">
+                <h2>Wyślij wiadomość</h2>
+            </div>
+
+            <form id="messageForm">
+                <input type="text" id="name" name="name" placeholder="Twoje imię" required>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <textarea id="message" name="message" placeholder="Wiadomość" rows="4" required></textarea>
+                <div class="row">
+                    <button id="submit">Wyślij</button>
+                    <button id="closePopup">Anuluj</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
